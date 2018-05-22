@@ -66,7 +66,8 @@ public class Game extends Object {
 			new Figure(Figure.S_FIGURE), new Figure(Figure.Z_FIGURE),
 			new Figure(Figure.RIGHT_ANGLE_FIGURE),
 			new Figure(Figure.LEFT_ANGLE_FIGURE),
-			new Figure(Figure.TRIANGLE_FIGURE), new Figure(Figure.LINE_FIGURE), };
+			new Figure(Figure.TRIANGLE_FIGURE), 
+			new Figure(Figure.LINE_FIGURE)};
 
 	/**
 	 * The graphical game component. This component is created on the first call
@@ -426,7 +427,7 @@ public class Game extends Object {
 	 * @return a random figure
 	 */
 	private Figure randomFigure() {
-		return figures[random.nextInt(figures.length - 1)];
+		return figures[random.nextInt(figures.length )];
 	}
 
 	/**

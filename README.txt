@@ -23,7 +23,7 @@
   The history of Tetris is described elsewhere, most notably by one
   of the original authors in the following web page:
 
-    http://vadim.www.media.mit.edu/Tetris.htm
+    https://vadim.oversigma.com/Tetris.htm
 
 
 
