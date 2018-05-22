@@ -174,7 +174,11 @@ public class Figure extends Object {
         // Initialize figure type variables
         switch (type) {
         case SQUARE_FIGURE :
-            maxOrientation = 2;
+        	/** 
+        	maxOrientation was 2 before. Since the square does not change shape after transformation, I
+        	changed it to 1. **/
+        	
+            maxOrientation = 1; 
             color = Configuration.getColor("figure.square", "#ffd8b1");
             shapeX[0] = -1;
             shapeY[0] = 0;
@@ -383,8 +387,13 @@ public class Figure extends Object {
      * previous cells. If no square board is attached, nothing is 
      * done.
      */
+    
+    /*
+     * Issue: Can't move left after hitting the right wall. 
+     * Changed xPos + 1 to xPos - 1. 
+     */
     public void moveLeft() {
-        if (isAttached() && canMoveTo(xPos + 1, yPos, orientation)) {
+        if (isAttached() && canMoveTo(xPos - 1, yPos, orientation)) {
             paint(null);
             xPos--;
             paint(color);
