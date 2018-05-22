@@ -242,9 +242,6 @@ public class Game extends Object {
 	 */
 	private void handleLevelModification() {
 		component.levelLabel.setText("Level: " + level);
-		if(level > 1) {
-			System.exit(-1);			
-		}
 		thread.adjustSpeed();
 	}
 
@@ -404,6 +401,10 @@ public class Game extends Object {
 		case KeyEvent.VK_S:
 			if (level < 9) {
 				level++;
+				handleLevelModification();
+			}
+			else {
+				level = 1;
 				handleLevelModification();
 			}
 			break;

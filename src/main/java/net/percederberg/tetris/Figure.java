@@ -393,9 +393,6 @@ public class Figure extends Object {
      * Changed xPos + 1 to xPos - 1. 
      */
     public void moveLeft() {
-
-        if (isAttached() && canMoveTo(xPos - 1, yPos, orientation)) {
-
         if (isAttached() && canMoveTo(xPos -1, yPos, orientation)) {
 
             paint(null);
