@@ -427,7 +427,7 @@ public class Game extends Object {
 	 * @return a random figure
 	 */
 	private Figure randomFigure() {
-		return figures[random.nextInt(figures.length - 1)];
+		return figures[random.nextInt(figures.length )];
 	}
 
 	/**
