@@ -17,7 +17,6 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-<<<<<<< HEAD
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 	</natures>clipse.buildship.core.gradleprojectnature</nature>
@@ -41,4 +40,4 @@
 				<id>org.eclipse.ui.ide.multiFilter</id>
 				<arguments>1.0-projectRelativePath-matches-false-false-.gradle</arguments>
 			</matcher>
-		</f
+		</filter>
