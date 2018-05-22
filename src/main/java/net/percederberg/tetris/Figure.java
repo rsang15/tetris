@@ -384,7 +384,7 @@ public class Figure extends Object {
      * done.
      */
     public void moveLeft() {
-        if (isAttached() && canMoveTo(xPos + 1, yPos, orientation)) {
+        if (isAttached() && canMoveTo(xPos -1, yPos, orientation)) {
             paint(null);
             xPos--;
             paint(color);
